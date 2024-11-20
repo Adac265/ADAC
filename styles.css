@@ -1,0 +1,74 @@
+body{
+    background-color: hsla(0, 4%, 77%, 0.894);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading{
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid hsl(229, 83%, 11%);
+    border-radius: 25px;
+    padding: 30px;
+    background-color: whitesmoke;
+}
+
+#display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsla(0, 5%, 26%, 0.863);
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.829);
+    margin-bottom: 25px;
+}
+
+#controls button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+#startBtn{
+    background-color: hsla(120, 100%, 25%, 0.811);
+}
+
+#startBtn:hover{
+    background-color: hsla(120, 100%, 15%, 0.811);
+}
+
+#stopBtn{
+    background-color: hsla(0, 98%, 50%, 0.906);
+}
+
+#stopBtn:hover{
+    background-color: hsla(0, 98%, 40%, 0.906);
+}
+
+#resetBtn{
+    background-color: hsla(242, 98%, 50%, 0.811);
+}
+
+#resetBtn:hover{
+    background-color: hsla(242, 98%, 30%, 0.811);
+}
+
+a{
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 10px;
+}
