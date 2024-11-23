@@ -1,23 +1,68 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Practice Web</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1 id="heading">STOP WATCH</h1>
-        <div id="container">
-            <div id="display">00:00:00:00</div>
-            <div id="controls">
-                <button id="startBtn" onclick="start()">Start</button>
-                <button id="stopBtn" onclick="stop()">Stop</button>
-                <button id="resetBtn" onclick="reset()">reset</button>
-            </div>
-            <a href="clock.html">Clock</a>
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adavin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Roboto:400,400i,700&display=swap" rel="stylesheet">
 
-        <script src="index.js"></script> 
-    </body>
+     
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    
+   <script defer src="fontawesome/js/all.min.js"></script>
+</head>
+<body>
+     <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkBtn">
+         <li class="fas fa-bars"></li>
+      </label>
+      <label id="logo">ADAVIN</label>
+      <ul>
+         <li><a href="" class="active">Home</a></li>
+         <li><a href="">About</a></li>
+         <li><a href="projects.html">Projects</a></li>
+         <li><a href="#address">Contacts</a></li>
+      </ul>
+   </nav> 
+   
+   <section id="welcomeSection">
+      <h1 id="welcome">Welcome to my portifolio</h1>
+      <div id="myDisc">
+         <h2>My name is Andrew.</h2>
+         <p>An upcoming web developer.</p>
+      </div>
+   </section>
+   <section id="footer" class="bg-dark text-white">
+      <h2 id="closing">I will be happy to collaborate with you.</h2>
+      <footer>
+         <div id="address">
+            <h5>Contact Us</h5>
+            <address>
+               Malawi University of Business and Applied Sciences <br>
+               Private Bag 303 <br>
+               Chichiri <br>
+               Blantyre 3
+               <br><br>
+               Phone:
+               <a href="tel:+265993867609" class="nav-link">+265 993 867 609</a>
+               Email address:
+               <a href="mailto:chitsekoandrew0@gmail.com" class="nav-link">chitsekoandrew0@gmail.com</a>
+            </address>
+         </div>
+         <div id="social">
+            <h5>Follow us</h5>
+            <ul class="social-list list-unstyled fs-9">
+               <li class="list-inline-item"><a href=""><i class="fab fa-facebook fa-2x"></i></a></li>
+               <li class="list-inline-item"><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+               <li class="list-inline-item"><a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+               <li class="list-inline-item"><a href=""><i class="fab fa-youtube fa-2x"></i></a></li>
+            </ul>
+         </div>
+      </footer>
+   </section>
+   <script src="js/bootstrap.js"></script> 
+   <script src="adavin.js"></script> 
+</body>
 </html>

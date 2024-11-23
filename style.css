@@ -1,51 +1,125 @@
 body{
-    background-color: hsla(0, 1%, 67%, 0.705);
+    background-color: rgb(205, 204, 204);
     margin: 0;
-}
-
-#container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(0, 0%, 100%);
-    width: 350px;
-    margin: auto;
-    border-radius: 30px;
-    box-shadow: 5px 5px 5px;
-    margin-top: 10px;
+    height: 100vh;
+}
+
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(245, 85%, 5%);
+    border-radius: 15px;
+    max-width: 400px;
+    overflow: hidden;
 }
 
 #heading{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serifs;
-    color: hsl(243, 100%, 5%);
-    text-shadow: 2px 2px 2px rgb(127, 122, 137);
-}
-
-#clockContainer{
-    background-color: hsl(240, 55%, 12%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: 20px auto;
-    box-shadow: 5px 0 5px rgb(6, 6, 57);
-}
-
-#clock{
-    background-color: rgba(15, 138, 97, 0.95);
-    font-family: monospace;
-    font-size: 1.7em;
-    border: 2px solid;
+    font-size: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
     padding: 10px;
 }
 
-#container a{
-    font-size: 1.5em;
-    text-decoration: none;
-    margin: 10px;
+#display{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(160, 78%, 25%);
+    margin: 10px 10px;
+    width: 350px;
+    height: 100px;
+    padding: 10px;
+    overflow: hidden;
 }
+
+#input{
+    width: 320px;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: left;
+    background-color: hsl(160, 78%, 25%);
+}
+
+#output{
+    width: 320px;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: right;
+    margin-top: 0;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(37, 37, 38);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#ans{
+    font-size: 1em;
+    
+}
+
+.funcBtn{
+    font-size: 1em;
+}
+
+.funcBtn{
+    background-color: hsl(0, 99%, 52%);
+}
+
+.funcBtn:hover{
+    background-color: hsl(0, 99%, 62%);
+}
+
+.funcBtn:active{
+    background-color: hsl(0, 99%, 72%);
+}
+
+button:hover{
+    background-color: hsl(240, 1%, 30%);
+}
+
+button:active{
+    background-color: hsl(240, 1%, 50%);
+}
+
+.operatorBtn{
+    background-color: hsl(25, 100%, 50%);
+}
+
+.operatorBtn:hover{
+    background-color: hsl(25, 100%, 60%);
+}
+
+.operatorBtn:active{
+    background-color: hsl(25, 100%, 70%);
+}
+
+#brand{
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: antiquewhite;
+    font-style: italic;
+    text-align: center;
+    padding: 0 20px;
+    
+}
+
